@@ -32,22 +32,39 @@ el C.C. Primavera Urbana (Local 157), Villavicencio, Meta.
 │   ├── food/               # Fotos de los platos
 │   ├── menu/               # Carta original (PNG + PDF descargable)
 │   └── favicon-*.png
-└── static/                 # Material original de marca (logo, video, imagen)
+├── static/                 # Material original de marca (logo, video, imagen)
+├── server.js               # Servidor Express (sirve el sitio en Railway)
+├── package.json            # Dependencias y script `start`
+└── railway.json            # Configuración de despliegue en Railway
 ```
 
 ## ▶️ Ver en local
 
-Necesita un servidor (por el video y las fuentes). Desde esta carpeta:
-
 ```bash
-python -m http.server 8099
-# abrir http://127.0.0.1:8099
+npm install
+npm start
+# abrir http://127.0.0.1:3000
 ```
 
-## 🚀 Despliegue
+> Sin Node también funciona con cualquier servidor estático, p. ej. `python -m http.server 8099`.
 
-Es un sitio estático: súbelo tal cual a **Netlify**, **Vercel**, **GitHub Pages**,
-**Cloudflare Pages** o cualquier hosting. No requiere build ni backend.
+## 🚀 Despliegue en Railway
+
+El proyecto ya está listo para [Railway](https://railway.app):
+
+1. En Railway: **New Project → Deploy from GitHub repo** y elige
+   `JuanEdu1/TREMENDO-CAFE-`.
+2. Railway detecta Node (Nixpacks), ejecuta `npm install` y `npm start`
+   automáticamente — no hay que configurar nada más.
+3. El servidor (`server.js`) escucha en `process.env.PORT` que Railway inyecta.
+   El healthcheck está en `/healthz`.
+4. Cuando termine el deploy, en **Settings → Networking → Generate Domain**
+   obtienes la URL pública.
+
+Cada `git push` a `main` vuelve a desplegar automáticamente.
+
+> También puede subirse como sitio estático a Netlify, Vercel, GitHub Pages o
+> Cloudflare Pages (en ese caso `server.js`/`package.json` no se usan).
 
 ## 📇 Datos del negocio
 
