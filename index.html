@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tremendo Café Bistró · Villavicencio</title>
+  <meta name="description" content="Tremendo Café Bistró — un lugar cálido en C.C. Primavera Urbana, Villavicencio. Café de especialidad, brunch, montaditos, repostería y línea saludable. Es estar sin querer irse." />
+  <meta name="theme-color" content="#5c5b3c" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Tremendo Café Bistró · Villavicencio" />
+  <meta property="og:description" content="Es estar sin querer irse. Café de especialidad, brunch y bistró en Primavera Urbana." />
+  <meta property="og:image" content="assets/img/wordmark.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/favicon-180.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ====== PRELOADER ====== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__mark">
+      <img src="assets/img/mark.png" alt="Tremendo" />
+    </div>
+    <span class="preloader__word">TREMENDO</span>
+  </div>
+
+  <!-- ====== NAV ====== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__brand" aria-label="Tremendo Café Bistró - inicio">
+        <img src="assets/img/mark.png" alt="" class="nav__logo" />
+        <span class="nav__name">Tremendo<small>Café Bistró</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#concepto">Concepto</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#menu">Menú</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#visitanos">Visítanos</a>
+        <a href="https://wa.me/573214392705" class="nav__cta" target="_blank" rel="noopener">Reservar</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="inicio">
+    <div class="hero__media">
+      <video autoplay muted loop playsinline poster="static/Imagen.jpg" id="heroVideo">
+        <source src="static/Video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__veil"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-reveal>C.C. Primavera Urbana · Villavicencio</p>
+      <h1 class="hero__title">
+        <span data-reveal data-reveal-delay="1">Café.</span>
+        <span data-reveal data-reveal-delay="2">Bistró.</span>
+        <span data-reveal data-reveal-delay="3" class="hero__title-accent">Refugio.</span>
+      </h1>
+      <p class="hero__tagline" data-reveal data-reveal-delay="4">«Tremendo es estar sin querer irse»</p>
+      <div class="hero__actions" data-reveal data-reveal-delay="5">
+        <a href="#menu" class="btn btn--solid">Ver el menú</a>
+        <a href="https://wa.me/573214392705?text=Hola%20Tremendo,%20quiero%20reservar%20una%20mesa" target="_blank" rel="noopener" class="btn btn--ghost">Reservar mesa</a>
+      </div>
+    </div>
+
+    <a href="#concepto" class="hero__scroll" aria-label="Bajar">
+      <span></span>
+      <em>Desliza</em>
+    </a>
+  </section>
+
+  <!-- ====== MARQUEE ====== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Café de especialidad</span><i>✦</i>
+      <span>Brunch todo el día</span><i>✦</i>
+      <span>Repostería artesanal</span><i>✦</i>
+      <span>Montaditos</span><i>✦</i>
+      <span>Línea saludable</span><i>✦</i>
+      <span>Panadería del Llano</span><i>✦</i>
+      <span>Café de especialidad</span><i>✦</i>
+      <span>Brunch todo el día</span><i>✦</i>
+      <span>Repostería artesanal</span><i>✦</i>
+      <span>Montaditos</span><i>✦</i>
+      <span>Línea saludable</span><i>✦</i>
+      <span>Panadería del Llano</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ====== CONCEPTO ====== -->
+  <section class="concept" id="concepto">
+    <div class="concept__deco" aria-hidden="true">
+      <!-- botanical svg -->
+      <svg viewBox="0 0 200 200" fill="none"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M100 30c-12 28-12 46 0 70 12-24 12-42 0-70Z"/><path d="M100 60c-26 10-40 22-52 44 28 2 44-8 60-30" /><path d="M100 60c26 10 40 22 52 44-28 2-44-8-60-30"/><path d="M100 100c-10 30-10 50 0 70 10-20 10-40 0-70Z"/><circle cx="100" cy="96" r="6"/></g></svg>
+    </div>
+
+    <div class="concept__grid">
+      <div class="concept__text">
+        <span class="kicker" data-reveal>Nuestro concepto</span>
+        <h2 class="display" data-reveal>Un lugar cálido<br>para quedarse.</h2>
+        <p data-reveal>
+          Tremendo nació para reunir: amigos, familia, trabajo o simplemente
+          para escapar de la monotonía con una excelente atención. Un café bistró
+          con alma, donde el aroma del café de especialidad se mezcla con el pan
+          recién horneado y los sabores del Llano.
+        </p>
+        <p data-reveal>
+          Aquí el brunch no tiene hora, la repostería es artesanal y cada plato
+          es una creación que conquista. <em>Naturalmente delicioso.</em>
+        </p>
+        <div class="concept__stats" data-reveal>
+          <div><strong>+60</strong><span>creaciones en carta</span></div>
+          <div><strong>Todo el día</strong><span>menú sin horario</span></div>
+          <div><strong>7 días</strong><span>abrimos siempre</span></div>
+        </div>
+      </div>
+
+      <div class="concept__media" data-reveal>
+        <img src="static/Imagen.jpg" alt="Ensalada Tremendo servida en Tremendo Café Bistró" />
+        <div class="concept__badge">
+          <img src="assets/img/mark.png" alt="" />
+          <span>Naturalmente<br>delicioso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ESPECIALIDADES ====== -->
+  <section class="specials" id="especialidades">
+    <div class="section-head">
+      <span class="kicker kicker--light" data-reveal>Las que conquistan</span>
+      <h2 class="display display--light" data-reveal>Especialidades de la casa</h2>
+    </div>
+
+    <div class="specials__grid">
+      <article class="special special--lg" data-reveal>
+        <div class="special__img"><img src="assets/food/tremendo-calentado.jpg" alt="Tremendo Calentado" loading="lazy" /></div>
+        <div class="special__body">
+          <h3>Tremendo Calentado</h3>
+          <p>Arroz, frijoles, plátano maduro, carne desmechada, huevo frito, hogao y pan brioche. El abrazo llanero.</p>
+          <span class="special__price">$21.000</span>
+        </div>
+      </article>
+
+      <article class="special" data-reveal data-reveal-delay="1">
+        <div class="special__img"><img src="assets/food/montaditos.jpg" alt="Montaditos" loading="lazy" /></div>
+        <div class="special__body">
+          <h3>Montadito de Res</h3>
+          <p>Pan brioche, medallones de lomo, hogao, chimichurri y huevo frito.</p>
+          <span class="special__price">$28.500</span>
+        </div>
+      </article>
+
+      <article class="special" data-reveal data-reveal-delay="2">
+        <div class="special__img"><img src="assets/food/explosion-chocolate.jpg" alt="Explosión de Chocolate" loading="lazy" /></div>
+        <div class="special__body">
+          <h3>Explosión de Chocolate</h3>
+          <p>Pancakes con crema de avellanas, banano, fresa, ganache y maní tostado.</p>
+          <span class="special__price">$22.500</span>
+        </div>
+      </article>
+
+      <article class="special" data-reveal data-reveal-delay="1">
+        <div class="special__img"><img src="assets/food/ensalada-tremendo.jpg" alt="Ensalada Tremendo" loading="lazy" /></div>
+        <div class="special__body">
+          <h3>Ensalada Tremendo</h3>
+          <p>Mix de lechugas, pollo, tocineta, champiñón, parmesano, vinagreta y croutons.</p>
+          <span class="special__price">$24.500</span>
+        </div>
+      </article>
+
+      <article class="special special--wide" data-reveal data-reveal-delay="2">
+        <div class="special__img"><img src="assets/food/tostada-francesa.jpg" alt="Tostada Francesa" loading="lazy" /></div>
+        <div class="special__body">
+          <h3>Tostada Francesa</h3>
+          <p>Pan brioche, queso crema, arándanos, banano, fresa, tocineta, salsa de frutos rojos y toffee.</p>
+          <span class="special__price">$22.500</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== MENU ====== -->
+  <section class="menu" id="menu">
+    <div class="section-head">
+      <span class="kicker" data-reveal>Carta completa</span>
+      <h2 class="display" data-reveal>El Menú</h2>
+      <p class="section-sub" data-reveal>Disponible todo el día, todos los días. Precios en pesos colombianos.</p>
+    </div>
+
+    <div class="menu__tabs" id="menuTabs" role="tablist">
+      <button class="menu__tab is-active" data-cat="calientes">Cafés &amp; Calientes</button>
+      <button class="menu__tab" data-cat="frias">Bebidas Frías</button>
+      <button class="menu__tab" data-cat="alcohol">Con Alcohol</button>
+      <button class="menu__tab" data-cat="huevos">Huevos</button>
+      <button class="menu__tab" data-cat="tradicional">Tradicional</button>
+      <button class="menu__tab" data-cat="sandwiches">Sándwiches &amp; Montaditos</button>
+      <button class="menu__tab" data-cat="dulces">Antojitos Dulces</button>
+      <button class="menu__tab" data-cat="panaderia">Panadería &amp; Pastelería</button>
+    </div>
+
+    <div class="menu__panels" id="menuPanels"><!-- JS injects --></div>
+
+    <div class="menu__foot" data-reveal>
+      <p>¿Prefieres verlo completo?</p>
+      <div class="menu__foot-actions">
+        <button class="btn btn--solid" id="openMenuModal">Ver carta original</button>
+        <a class="btn btn--ghost" href="assets/menu/MENU-TREMENDO-2026.pdf" download>Descargar PDF</a>
+      </div>
+      <small>* Ley de propina 1937 de 2018: la propina del 10% es voluntaria. Consulta su inclusión en tu factura.</small>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCIA / SERVICIOS ====== -->
+  <section class="exp" id="experiencia">
+    <div class="section-head">
+      <span class="kicker kicker--light" data-reveal>Más que un café</span>
+      <h2 class="display display--light" data-reveal>Vive la experiencia Tremendo</h2>
+    </div>
+
+    <div class="exp__grid">
+      <article class="exp__card" data-reveal>
+        <span class="exp__num">01</span>
+        <h3>Celebra con nosotros</h3>
+        <p>Cumpleaños, aniversarios, eventos empresariales y catering. Cualquier fecha es perfecta para una celebración tremenda.</p>
+      </article>
+      <article class="exp__card" data-reveal data-reveal-delay="1">
+        <span class="exp__num">02</span>
+        <h3>Brunch o desayuno sorpresa</h3>
+        <p>Personalízalo con los productos que elijas a la carta. Haz tu pedido con un día de anticipación y déjanos sorprender.</p>
+      </article>
+      <article class="exp__card" data-reveal data-reveal-delay="2">
+        <span class="exp__num">03</span>
+        <h3>Parqueadero 1 hora gratis</h3>
+        <p>En compras iguales o superiores a $20.000. Presenta tu factura en el punto de pago y listo.</p>
+      </article>
+      <article class="exp__card" data-reveal data-reveal-delay="3">
+        <span class="exp__num">04</span>
+        <h3>Domicilios y reservas</h3>
+        <p>Llevamos lo tremendo hasta tu puerta. Escríbenos por WhatsApp para pedidos, reservas y domicilios.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== GALERIA ====== -->
+  <section class="gallery" id="galeria" aria-label="Galería">
+    <div class="gallery__track" id="galleryTrack">
+      <figure><img src="assets/food/parfait.jpg" alt="Tremendo Parfait" loading="lazy" /></figure>
+      <figure><img src="assets/food/coctel-sunset.jpg" alt="Cócteles Tremendo" loading="lazy" /></figure>
+      <figure><img src="assets/food/roast-beef.jpg" alt="Sándwich Roast Beef" loading="lazy" /></figure>
+      <figure><img src="assets/food/bowl-frutos-rojos.jpg" alt="Bowl de frutos rojos" loading="lazy" /></figure>
+      <figure><img src="assets/food/tremenda-cacerola.jpg" alt="Tremenda Cacerola" loading="lazy" /></figure>
+      <figure><img src="assets/food/panaderia-brioche.jpg" alt="Panadería" loading="lazy" /></figure>
+      <figure><img src="assets/food/tremendo-sandwich.jpg" alt="Tremendo Sándwich" loading="lazy" /></figure>
+      <figure><img src="assets/food/poche-jamon-pavo.jpg" alt="Huevos poché con jamón de pavo" loading="lazy" /></figure>
+      <figure><img src="assets/food/tremenda-arepa.jpg" alt="Tremenda Arepa" loading="lazy" /></figure>
+      <figure><img src="assets/food/pasteleria-tortas.jpg" alt="Pastelería" loading="lazy" /></figure>
+    </div>
+  </section>
+
+  <!-- ====== VISITANOS ====== -->
+  <section class="visit" id="visitanos">
+    <div class="visit__grid">
+      <div class="visit__info">
+        <span class="kicker" data-reveal>Visítanos</span>
+        <h2 class="display" data-reveal>Te esperamos<br>en Primavera Urbana</h2>
+
+        <ul class="visit__list">
+          <li data-reveal>
+            <span class="visit__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <strong>Dirección</strong>
+              C.C. Primavera Urbana · Primer piso · Local 157<br>
+              Calle 15 # 40-01, Villavicencio, Meta
+            </div>
+          </li>
+          <li data-reveal data-reveal-delay="1">
+            <span class="visit__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg>
+            </span>
+            <div>
+              <strong>Horarios</strong>
+              Domingo a Jueves · 11:00 a.m. – 8:00 p.m.<br>
+              Viernes y Sábado · 11:00 a.m. – 9:00 p.m.
+            </div>
+          </li>
+          <li data-reveal data-reveal-delay="2">
+            <span class="visit__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.4"/><path d="M11 18.5h2"/></svg>
+            </span>
+            <div>
+              <strong>Reservas y domicilios</strong>
+              <a href="https://wa.me/573214392705" target="_blank" rel="noopener">WhatsApp 321 439 2705</a><br>
+              <a href="tel:+576086779985">Tel. (608) 677 9985</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="visit__social" data-reveal>
+          <a href="https://www.instagram.com/tremendocafebistro/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/tremendocafebistro/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+
+      <div class="visit__map" data-reveal>
+        <iframe
+          title="Ubicación Tremendo Café Bistró"
+          src="https://www.google.com/maps?q=Centro+Comercial+Primavera+Urbana+Villavicencio&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="visit__directions" href="https://www.google.com/maps/dir/?api=1&destination=Centro+Comercial+Primavera+Urbana+Villavicencio" target="_blank" rel="noopener">Cómo llegar →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA FINAL ====== -->
+  <section class="closing">
+    <div class="closing__inner">
+      <img src="assets/img/mark.png" alt="" class="closing__mark" />
+      <p class="closing__line">Tremendo es estar</p>
+      <p class="closing__line closing__line--accent">sin querer irse.</p>
+      <a href="https://wa.me/573214392705?text=Hola%20Tremendo,%20quiero%20reservar" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Reserva tu mesa</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/img/wordmark.png" alt="Tremendo Café Bistró" />
+        <p>Café · Bistró · Repostería · Brunch<br>Villavicencio, Meta</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#concepto">Concepto</a>
+        <a href="#menu">Menú</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#visitanos">Visítanos</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="https://wa.me/573214392705" target="_blank" rel="noopener">WhatsApp 321 439 2705</a>
+        <a href="https://www.instagram.com/tremendocafebistro/" target="_blank" rel="noopener">@tremendocafebistro</a>
+        <span>C.C. Primavera Urbana · Local 157</span>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span id="year"></span> Tremendo Café Bistró. Todos los derechos reservados.</span>
+      <span>Naturalmente delicioso.</span>
+    </div>
+  </footer>
+
+  <!-- ====== WHATSAPP FLOAT ====== -->
+  <a href="https://wa.me/573214392705?text=Hola%20Tremendo%20%F0%9F%91%8B" class="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 4C9.96 4 5.02 8.94 5.02 15.02c0 2.13.62 4.11 1.69 5.79L5 27l6.37-1.67a10.96 10.96 0 0 0 4.67 1.04h.01c6.08 0 11.02-4.94 11.02-11.02C27.07 8.94 22.12 4 16.04 4Zm6.45 15.57c-.27.77-1.58 1.47-2.18 1.52-.58.05-1.13.27-3.8-.79-3.2-1.26-5.23-4.5-5.39-4.71-.16-.21-1.28-1.7-1.28-3.25 0-1.54.81-2.3 1.1-2.61.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.18.01.44-.07.69.53.27.65.92 2.24 1 2.4.08.16.13.35.02.56-.1.21-.16.35-.31.53-.16.18-.33.41-.47.55-.16.16-.32.33-.14.64.18.31.81 1.34 1.74 2.17 1.2 1.07 2.21 1.4 2.52 1.56.31.16.49.13.67-.08.18-.21.77-.9.98-1.21.21-.31.41-.26.69-.16.28.1 1.79.85 2.1 1 .31.16.51.23.59.36.08.13.08.74-.19 1.51Z"/></svg>
+  </a>
+
+  <!-- ====== BACK TO TOP ====== -->
+  <button class="to-top" id="toTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <!-- ====== MENU MODAL ====== -->
+  <div class="modal" id="menuModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Carta original Tremendo">
+      <button class="modal__close" data-close aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__scroll" id="modalScroll">
+        <img src="assets/menu/menu_page_1.png" alt="Menú Tremendo página 1" loading="lazy" />
+        <img src="assets/menu/menu_page_2.png" alt="Menú Tremendo página 2" loading="lazy" />
+        <img src="assets/menu/menu_page_3.png" alt="Menú Tremendo página 3" loading="lazy" />
+        <img src="assets/menu/menu_page_4.png" alt="Menú Tremendo página 4" loading="lazy" />
+        <img src="assets/menu/menu_page_5.png" alt="Menú Tremendo página 5" loading="lazy" />
+        <img src="assets/menu/menu_page_6.png" alt="Menú Tremendo página 6" loading="lazy" />
+        <img src="assets/menu/menu_page_7.png" alt="Menú Tremendo página 7" loading="lazy" />
+        <img src="assets/menu/menu_page_8.png" alt="Menú Tremendo página 8" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

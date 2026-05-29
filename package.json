@@ -1,0 +1,16 @@
+{
+  "name": "tremendo-cafe-bistro",
+  "version": "1.0.0",
+  "description": "Sitio web de Tremendo Café Bistró — Villavicencio, C.C. Primavera Urbana.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "license": "UNLICENSED"
+}

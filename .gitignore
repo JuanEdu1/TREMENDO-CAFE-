@@ -1,0 +1,24 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Entorno
+.env
+.env.*
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Archivos temporales de trabajo (anclados a la raíz para no excluir assets/)
+/_*.png
+/menu_text.txt
+/menu_tremendo.pdf
+/menu_page_*.png
+/*.tmp
